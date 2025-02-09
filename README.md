@@ -61,7 +61,7 @@ Design:https://www.figma.com/design/EtfUq6HrmgH8H5zctTMv8x/ecosnap?node-id=0-1&t
 
 ## Screenshots
 
-![WhatsApp Image 2025-02-09 at 11 53 08_cc506598](https://github.com/user-attachments/assets/79b3405b-2718-4d56-929f-0ed6d2550a7d)
+![Screenshot 2025-02-09 115622](https://github.com/user-attachments/assets/6db8e0e6-ed17-4a18-9a46-06b1100ab9be)
 
 ![WhatsApp Image 2025-02-09 at 11 52 29_e0428691](https://github.com/user-attachments/assets/70e5d592-44ce-4db6-9f41-9633496d76ce)
 
