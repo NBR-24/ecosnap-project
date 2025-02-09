@@ -19,6 +19,12 @@
         color: #fff;
         text-align: center;
       }
+      .logo h1 {
+       font-size: 50px;
+       font-weight: bold;
+       color: black;
+      }
+
       .navbar {
         background-color: #C6C6C6;
         padding: 15px 40px;
@@ -80,14 +86,21 @@
         gap: 50px;
         flex-wrap: wrap;
         margin: 50px 20px;
-      }
+    }
+
       .box {
-        background-color: #004d40;
+        background-color: #004d40; 
         padding: 20px;
         border-radius: 15px;
-        width: 320px;
+        width: 400px;
+        height: 250px;
         text-align: center;
-      }
+        color: white; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
       .marquee {
         background-color: #00796b;
         color: #ffeb3b;
@@ -140,7 +153,7 @@
         text-align: center;
       }
       .marquee {
-        background-color: #00796b;
+        background-color: #14AA69;
         color: #ffeb3b;
         padding: 10px 0;
         font-size: 18px;
@@ -184,11 +197,18 @@
         text-align: left;
       }
       .footer {
-        background-color: #043F32;
-        padding: 20px;
-        margin-top: 50px;
-        text-align: center;
-      }
+    background-color: #043F32;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: white; 
+    }
+
+    .footer p {
+        margin: 0;
+        color: white; 
+    }
+
       .footer p {
         margin: 0;
         color: #ccc;
@@ -212,7 +232,7 @@
     background-size: cover;
     color: #000000;
     text-align: center;
-    padding-bottom: 200px; /* Prevent content from overlapping footer */
+    padding-bottom: 200px;
 }
 
 .footer {
@@ -228,35 +248,36 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="logo"><h1 style="color: black font: 40 ">EcoSnap</h1></div>
+      <div class="logo"><h1 style="color: black ;font: 50px;font-weight: bold; ">EcoSnap</h1></div>
       <div class="nav-links">
-        <a href="mv.html">About</a>
-        <a href="signin.html">Login</a>
-        <a href="signup.html">Sign Up</a>
-      </div>
+        <a href="mv.html" style="font-size: 30px;">About</a>
+        <a href="signin.html" style="font-size: 30px;">Login</a>
+        <a href="signup.html" style="font-size: 30px;">Sign Up</a>
+    </div>
+    
     </div>
     <div class="main-content">
       <h1>
         Join Us in the <span class="bg-green-500 text-white px-4 rounded-full">Fight</span> for Environment
       </h1>
     </div>
-    <div class="actions">
-      <div class="bg-green-500 text-white px-4 rounded-full"><p>WE</p></div>
-      <div class="bg-green-500 text-white px-4 rounded-full"><p>PROTECT</p></div>
-      <div class="bg-green-500 text-white px-4 rounded-full"><p>NATURE</p></div>
-    </div>
     <div class="missioncontainer">
-      <div class="box">
-        <h1>Our Mission</h1>
-        <p>To revolutionize waste management by connecting individuals with local waste collectors, ensuring cleaner communities through technology and collective action.</p>
-      </div>
-      <div class="box">
-        <h1>Our Vision</h1>
-        <p>To create a world where waste is efficiently managed, recycling is maximized, and every individual contributes to a sustainable and pollution-free environment.</p>
-      </div>
+    <div class="box">
+        <h1 style="font-size: 28px; font-weight: bold;">Our Mission</h1>
+        <p style="font-size: 18px; line-height: 1.6;">
+            To revolutionize waste management by connecting individuals with local waste collectors, ensuring cleaner communities through technology and collective action.
+        </p>
     </div>
-    <div class="marquee mb-0 leading-tight">Green The Planet ★ Green The Planet ★ Green The Planet ★ Green The Planet ★  Green The Planet ★ Green The Planet ★ Green The Planet ★ Green The Planet ★</div>
-    <div class="footer mb-0">
+    <div class="box">
+        <h1 style="font-size: 28px; font-weight: bold;">Our Vision</h1>
+        <p style="font-size: 18px; line-height: 1.6;">
+            To create a world where waste is efficiently managed, recycling is maximized, and every individual contributes to a sustainable and pollution-free environment.
+        </p>
+    </div>
+</div>
+
+    <div class="marquee  mb-[-50px] leading-tight">★ Green The Planet ★ Green The Planet ★ Green The Planet ★ Green The Planet ★  Green The Planet ★ Green The Planet ★ Green The Planet ★ Green The Planet ★</div>
+    <div class="footer mb-[-200px]">
         <html>
             <head>
                 <title>EcoSnap</title>
