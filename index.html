@@ -184,7 +184,7 @@
         text-align: left;
       }
       .footer {
-        background-color: #333;
+        background-color: #043F32;
         padding: 20px;
         margin-top: 50px;
         text-align: center;
@@ -203,12 +203,32 @@
           gap: 10px;
           margin-top: 10px;
         }
+      
       }
+      body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: url('https://img.freepik.com/fotos-kostenlos/blick-auf-eine-spektakulaere-naturlandschaft_23-2150763626.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 200px; /* Prevent content from overlapping footer */
+}
+
+.footer {
+    background-color: #043F32;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 10; /* Ensures footer is on top */
+}
+
     </style>
   </head>
   <body>
     <div class="navbar">
-      <div class="logo"><h1 style="color: black;">EcoSnap</h1></div>
+      <div class="logo"><h1 style="color: black font: 40 ">EcoSnap</h1></div>
       <div class="nav-links">
         <a href="mv.html">About</a>
         <a href="signin.html">Login</a>
@@ -235,8 +255,8 @@
         <p>To create a world where waste is efficiently managed, recycling is maximized, and every individual contributes to a sustainable and pollution-free environment.</p>
       </div>
     </div>
-    <div class="marquee mt-20">Green The Planet ★ Green The Planet ★ Green The Planet ★ Green The Planet ★  Green The Planet ★ Green The Planet ★ Green The Planet ★ Green The Planet ★</div>
-    <div class="footer">
+    <div class="marquee mb-0 leading-tight">Green The Planet ★ Green The Planet ★ Green The Planet ★ Green The Planet ★  Green The Planet ★ Green The Planet ★ Green The Planet ★ Green The Planet ★</div>
+    <div class="footer mb-0">
         <html>
             <head>
                 <title>EcoSnap</title>
@@ -266,22 +286,22 @@
                         <a href="#" class="text-white underline mb-6 inline-block">Contact Us <i class="fas fa-arrow-up-right"></i></a>
                         <p class="text-sm">&copy; EcoSnap 2025</p>
                     </div>
-                    <div class="text-right mt-8 md:mt-0">
+                    <div class="text-left mt-8 md:mt-0">
                         <div class="mb-4">
                             <span class="text-lg">01</span>
                             <a href="mv.html" class="text-2xl ml-4">ABOUT US</a>
                         </div>
                         <div class="mb-4">
                             <span class="text-lg">02</span>
-                            <a href="#" class="text-2xl ml-4">PROFILE</a>
+                            <a href="user.html" class="text-2xl ml-4">PROFILE</a>
                         </div>
                         <div class="mb-4">
                             <span class="text-lg">03</span>
-                            <a href="#" class="text-2xl ml-4">NEWS</a>
+                            <a href="ranking.html" class="text-2xl ml-4">RANKING</a>
                         </div>
                         <div>
                             <span class="text-lg">04</span>
-                            <a href="#" class="text-2xl ml-4">STATISTICS</a>
+                            <a href="volunteer.html" class="text-2xl ml-4">STATISTICS</a>
                         </div>
                     </div>
                 </div>
