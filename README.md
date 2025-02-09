@@ -37,5 +37,12 @@ For Backend
 
 Run-
 https://nbr-24.github.io/ecosnap-project/
+
+## Work Flow
+
+![workflow](https://github.com/user-attachments/assets/fa328922-28e9-4004-ba0e-c6fd5dae893d)
+
+
+
 ## Conclude
 Made with ❤️ at TinkerHub ThinkHer-Hack Projects 
