@@ -1,0 +1,11 @@
+.nav-links{
+    background-color: aliceblue;
+}
+
+.custom-button {
+    padding: 8px 16px; /* px-4 (16px horizontal) and py-2 (8px vertical) */
+    border-radius: 9999px; /* rounded-full */
+    border: 1px solid #9ca3af; /* border-gray-400 (Hex: #9ca3af) */
+    color: black; /* text-black */
+  }
+  

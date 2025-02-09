@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSnap Upload</title>
+    <link rel="stylesheet" href="upload.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+        }
+
+        .header {
+            background-color: #C6C6C6;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .nav-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            border: none;
+            background-color: #d1d1d1;
+            cursor: pointer;
+        }
+a{
+    text-decoration: none;
+}
+        .connect-btn {
+            background-color: black;
+            color: white;
+        }
+
+        .profile-btn {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background-color: #f3f3f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .title {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .upload-area {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #2a2a2a;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .upload-area img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .upload-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .upload-btn {
+            padding: 0.5rem 1rem;
+            background-color: #3a3a3a;
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            color: white;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            background-color: transparent;
+            border: 1px solid #4a4a4a;
+            border-radius: 0.5rem;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .form-input::placeholder {
+            color: #6a6a6a;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: #10b981;
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+        @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          text-align: center;
+        }
+        .nav-links {
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 10px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">EcoSnap</div>
+        <div class="nav-buttons">
+            <button class="custom-button">
+                <a class="text-green-500" href="volunteer.html">
+                    Statistics
+                   </a>
+            </button>
+            <button class="custom-button">
+                <a class="text-black-500" href="ranking.html">
+                    Ranking
+                   </a>
+            </button>
+            <button class="custom-button">
+                <a class="text-green-500" href="footer.html">
+                    Let's Connect
+                   </a>
+            </button>
+            <button class="custom-button">
+                <a class="text-green-500" href="user.html">
+                    👤
+                   </a>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="title" id="uploadStatus">Upload Image</h1>
+
+        <div class="upload-area" id="previewArea">
+            <div class="upload-buttons" id="uploadButtons">
+                <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                    📁 Browse Files
+                </button>
+                <button class="upload-btn" onclick="document.getElementById('cameraInput').click()">
+                    📷 Use Camera
+                </button>
+            </div>
+        </div>
+
+        <input type="file" id="fileInput" class="hidden" accept="image/*" onchange="handleFileSelect(event)">
+        <input type="file" id="cameraInput" class="hidden" accept="image/*" capture="environment" onchange="handleFileSelect(event)">
+
+        <div class="form-group">
+            <label class="form-label">Type of Trash</label>
+            <input type="text" class="form-input" placeholder="Enter the type(eg: plastics,liquid,greeny..)" id="trashType">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Location</label>
+            <input type="text" class="form-input" placeholder="Enter the location where you find trash" id="location">
+        </div>
+
+        <button class="submit-btn" onclick="handleUpload()">Upload</button>
+    </main>
+
+    <script>
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const previewArea = document.getElementById('previewArea');
+                    const uploadButtons = document.getElementById('uploadButtons');
+                    const uploadStatus = document.getElementById('uploadStatus');
+                    
+                    // Create image preview
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    
+                    // Clear previous content and add image
+                    previewArea.innerHTML = '';
+                    previewArea.appendChild(img);
+                    
+                    uploadStatus.textContent = 'Image Ready';
+                };
+                
+                uploadStatus.textContent = 'Uploading...';
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function handleUpload() {
+            const trashType = document.getElementById('trashType').value;
+            const location = document.getElementById('location').value;
+            
+            // Here you would typically send the data to your server
+            console.log({
+                trashType,
+                location
+            });
+            
+            alert('Upload successful!');
+        }
+    </script>
+</body>
+</html>
