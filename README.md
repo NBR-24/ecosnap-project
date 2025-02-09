@@ -5,6 +5,7 @@ EcoSpan is a Waste Collection website designed to empower individuals and commun
 
 
 ## Team Name
+
 Thalatherichavar
 
 ## Team Members
@@ -40,7 +41,8 @@ For Backend
 - Flask
 - SQL
 
-- 
+
+  
 ## How to  run
 
 Run-
