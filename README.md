@@ -42,7 +42,7 @@ https://nbr-24.github.io/ecosnap-project/
 
 ![workflow](https://github.com/user-attachments/assets/fa328922-28e9-4004-ba0e-c6fd5dae893d)
 
-
-
+## UI Design
+Design:https://www.figma.com/design/EtfUq6HrmgH8H5zctTMv8x/ecosnap?node-id=0-1&t=5IvudHrIiXwS4n96-1
 ## Conclude
 Made with ❤️ at TinkerHub ThinkHer-Hack Projects 
