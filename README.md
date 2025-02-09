@@ -44,5 +44,15 @@ https://nbr-24.github.io/ecosnap-project/
 
 ## UI Design
 Design:https://www.figma.com/design/EtfUq6HrmgH8H5zctTMv8x/ecosnap?node-id=0-1&t=5IvudHrIiXwS4n96-1
+
+## Screenshots
+![Screenshot 2025-02-09 114340](https://github.com/user-attachments/assets/568cf633-4ab7-43f2-ac13-edaf05dba282)
+![Screenshot 2025-02-09 114439](https://github.com/user-attachments/assets/a780a7b6-f760-47f1-85bd-d7119683e35b)
+![Screenshot 2025-02-09 114630](https://github.com/user-attachments/assets/1aca9e73-f299-4751-805b-8c9e13fd2b6e)
+![Screenshot 2025-02-09 114557](https://github.com/user-attachments/assets/ade242c9-f68c-4e73-a090-a7f9466ed735)
+![Screenshot 2025-02-09 114520](https://github.com/user-attachments/assets/ee18ccbe-c8a5-4e29-be84-65bf4f8e49e9)
+![Screenshot 2025-02-09 114532](https://github.com/user-attachments/assets/af0375e4-ee97-4e34-9eba-7329c6d6a1f2)
+
+
 ## Conclude
 Made with ❤️ at TinkerHub ThinkHer-Hack Projects 
