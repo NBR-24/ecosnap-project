@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, flash
+'''from flask import Flask, render_template, request, redirect, flash
 import sqlite3
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -57,3 +57,4 @@ def signup():
 
 if __name__ == "__main__":
     app.run(debug=True)
+'''
